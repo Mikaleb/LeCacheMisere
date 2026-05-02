@@ -44,7 +44,7 @@ export default function SimpleBottomNavigation() {
 
         <Button
           size="small"
-          href="https://github.com/Mikaleb/LeCacheMisere/blob/main/PRIVACY.md"
+          href="https://mikaleb.github.io/LeCacheMisere/privacy.html"
           target="_blank"
           rel="noopener"
           sx={{

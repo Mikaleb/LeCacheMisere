@@ -1,45 +1,55 @@
 # Privacy Policy for Hide Puretech (Le Cache Misère)
 
-Last updated: April 12, 2026
+**Last updated: May 2, 2026**
 
-## 1. Overview
-Hide Puretech (also known as "Le Cache Misère" or "LCM") is committed to protecting your privacy. This Privacy Policy explains how our browser extension handles data.
+## 1. Introduction
+This Privacy Policy describes how the "Hide Puretech" (also known as "Le Cache Misère" or "LCM") browser extension ("the Extension") handles information. We are committed to ensuring your privacy and being transparent about how we operate.
 
-**The most important point: Hide Puretech does not collect, store, or transmit any of your personal data to external servers. All data processing happens locally on your computer.**
+## 2. Data Collection and Usage
+**The Extension does not collect, store, or transmit any of your personal data.**
 
-## 2. Data We Access (Prominent Disclosure)
-To provide its core functionality (hiding advertisements for cars with unreliable engines), the extension requires access to:
-- **Page Content**: The extension reads the text content (specifically vehicle titles and descriptions) of supported car classifieds websites. This is strictly necessary to identify and hide ads that match your engine filter settings (e.g., "Puretech", "THP", "BlueHDi").
-- **Tabs/URLs**: The extension monitors the URL of the tab you are visiting to determine if it should activate its filtering logic.
+### 2.1. Page Content and URLs
+To provide its core functionality (filtering vehicle advertisements with specific engines), the Extension accesses:
+- **Vehicle Data**: The Extension reads the text content (titles and descriptions) of supported car classifieds websites only when you are browsing them. This is done locally in your browser to identify keywords related to engine models (e.g., "Puretech", "THP").
+- **URLs**: The Extension checks the URL of the tab you are visiting to determine if it matches a supported website.
 
-### Supported Websites
-The extension only processes data on the following domains:
-- `lacentrale.fr`
-- `aramisauto.com`
-- `leboncoin.fr`
-- `autosphere.fr`
-- `autoscout24.fr`
+**Handling**: This data is processed **exclusively in-memory** and is never stored, logged, or sent to any server.
 
-## 3. Data Storage
-- **Local Storage**: Your preferences (which motors to hide, which websites are active, UI settings) and your consent status are stored locally using the `chrome.storage.sync` API.
-- **Syncing**: If you are signed into your browser, these settings may be synchronized across your devices. We do not have access to this data.
+### 2.2. User Preferences
+The Extension allows you to save your settings (e.g., which motors to hide, active websites).
+- **Storage**: These preferences are stored locally using your browser's \`chrome.storage.sync\` or \`chrome.storage.local\` API.
+- **Syncing**: If you have browser synchronization enabled, these settings may be synced by your browser provider across your devices. We do not have access to this synchronized data.
 
-## 4. Third-Party Sharing
-We **do not share** any information with third parties. **No data is sent to any external server**, analytics provider, or advertiser.
+## 3. Data Sharing
+**We do not share any data with third parties.**
+- No data is sent to external servers.
+- No data is shared with advertisers or analytics providers.
+- No data is sold or traded.
 
-## 5. Security
-The extension uses secure browser APIs. Since no data is transmitted externally, there is no risk of data interception.
+## 4. Permissions Justification
+The Extension requests the following permissions for these specific reasons:
+- \`storage\`: To save and retrieve your filtering preferences.
+- \`tabs\`: To monitor current tab URLs and update the extension badge (showing the count of hidden ads).
+- \`Content Scripts\`: To identify and hide specific advertisements on supported domains.
 
-## 6. Permissions Justification
-- `storage`: Required to save your filtering preferences locally.
-- `tabs`: Required to update the extension icon's badge with the number of hidden ads on the current page.
-- `Content Scripts`: Required to read ad titles and hide them on supported car listing websites.
+## 5. User Rights and Control
+Since no data is collected or stored on our servers, you have full control over your data:
+- **Opt-out**: You can stop all data processing by disabling or uninstalling the Extension.
+- **Data Erasure**: You can clear all saved preferences by clearing your browser's extension data or uninstalling the Extension.
 
-## 7. User Consent
-By clicking "Accept and Continue" in the extension popup, you consent to the local processing of page content as described above. You can revoke this consent at any time by uninstalling the extension or clearing its data.
+## 6. Supported Domains
+The Extension only operates on the following domains:
+- \`lacentrale.fr\`
+- \`aramisauto.com\`
+- \`leboncoin.fr\`
+- \`autosphere.fr\`
+- \`autoscout24.fr\`
+
+## 7. Security
+We follow industry best practices for browser extension development. Because the Extension operates entirely offline and does not communicate with external servers, your browsing data remains private and secure within your own browser environment.
 
 ## 8. Changes to This Policy
-We may update this Privacy Policy. Any changes will be reflected here and in the extension update notes.
+We may update this Privacy Policy from time to time. Any changes will be posted on this page and reflected in the "Last updated" date.
 
 ## 9. Contact
-If you have any questions, you can open an issue on our [GitHub repository](https://github.com/Mikaleb/LeCacheMisere).
+For any questions regarding this Privacy Policy, please contact us via our GitHub repository: [https://github.com/Mikaleb/LeCacheMisere](https://github.com/Mikaleb/LeCacheMisere)
